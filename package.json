@@ -7,6 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "core-js": "^2.4.1",
+    "h2o2": "^5.4.0",
     "hapi": "13.2.2",
     "inert": "3.2.0",
     "lodash": "^4.13.1",

@@ -137,6 +137,14 @@ module.exports = {
             /<title>[^<]*<\/title>/i,
             '<title>' + titles[context.route] + '</title>'
           )
+        },
+        proxyTable: {
+          '/api/service': {
+            target: 'http://localhost:5000',
+            pathRewrite: {
+              '^/api': ''
+            }
+          }
         }
       }
     )
