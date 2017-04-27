@@ -137,6 +137,12 @@ module.exports = {
             /<title>[^<]*<\/title>/i,
             '<title>' + titles[context.route] + '</title>'
           )
+        },
+
+        // Set the viewport of PhantomJS so media query's works
+        viewportSize: {
+          width: 1024,
+          height: 768
         }
       }
     )
