@@ -145,6 +145,12 @@ module.exports = {
               '^/api': ''
             }
           }
+        },
+
+        // Set the viewport of PhantomJS so media query's works
+        viewportSize: {
+          width: 1024,
+          height: 768
         }
       }
     )
